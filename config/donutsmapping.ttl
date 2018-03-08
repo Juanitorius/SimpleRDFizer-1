@@ -1,0 +1,49 @@
+@prefix rml:<http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix iasis: <http://project-iasis.eu/vocab/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#Donuts>
+	rml:logicalSource [ 
+		rml:source "file:///home/guillermobet/Documentos/Fraunhofer/ProjectIASIS/SimpleRDFizer/sample-data/donuts.json";
+		rml:referenceFormulation ql:JSONPath;
+		rml:iterator "$[*]"
+	];
+
+	rr:subjectMap [
+		rr:template "http://iasis-project.eu/{id}";
+		rr:class iasis:Donut
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate iasis:name;
+		rr:objectMap [ rml:reference "name"; rr:datatype xsd:string ]
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate iasis:ppu;
+		rr:objectMap [ rml:reference "ppu"; rr:datatype xsd:float ]
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate iasis:batter;
+		rr:objectMap [ rr:parentTriplesMap <#Batter> ]
+	].
+
+<#Batter>
+	rml:logicalSource [ 
+		rml:source "file:///home/guillermobet/Documentos/Fraunhofer/ProjectIASIS/SimpleRDFizer/sample-data/donuts.json";
+		rml:referenceFormulation ql:JSONPath;
+		rml:iterator "$[*].batters.batter[*]"
+	];
+
+	rr:subjectMap [
+		rr:template "http://iasis-project.eu/Batter/{id}";
+		rr:class iasis:Batter
+	];
+
+	rr:predicateObjectMap [
+		rr:predicate iasis:batterType;
+		rr:objectMap [ rml:reference "type"; rr:datatype xsd:string ]
+	].

@@ -1,0 +1,20 @@
+<http://iasis-project.eu/0001> <http://www.w3.org/2000/01/rdf-schema#type> <http://project-iasis.eu/vocab/Donut> . 
+<http://iasis-project.eu/0001> <http://project-iasis.eu/vocab/ppu> "0.71"^^<http://www.w3.org/2001/XMLSchema#float> . 
+<http://iasis-project.eu/0001> <http://project-iasis.eu/vocab/name> "Cake"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://iasis-project.eu/0001> <http://project-iasis.eu/vocab/batter> <http://iasis-project.eu/Batter/0001> . 
+<http://iasis-project.eu/0002> <http://www.w3.org/2000/01/rdf-schema#type> <http://project-iasis.eu/vocab/Donut> . 
+<http://iasis-project.eu/0002> <http://project-iasis.eu/vocab/ppu> "0.55"^^<http://www.w3.org/2001/XMLSchema#float> . 
+<http://iasis-project.eu/0002> <http://project-iasis.eu/vocab/name> "Raised"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://iasis-project.eu/0002> <http://project-iasis.eu/vocab/batter> <http://iasis-project.eu/Batter/0002> . 
+<http://iasis-project.eu/0003> <http://www.w3.org/2000/01/rdf-schema#type> <http://project-iasis.eu/vocab/Donut> . 
+<http://iasis-project.eu/0003> <http://project-iasis.eu/vocab/ppu> "0.23"^^<http://www.w3.org/2001/XMLSchema#float> . 
+<http://iasis-project.eu/0003> <http://project-iasis.eu/vocab/name> "Old Fashioned"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://iasis-project.eu/0003> <http://project-iasis.eu/vocab/batter> <http://iasis-project.eu/Batter/0003> . 
+<http://iasis-project.eu/Batter/1001> <http://www.w3.org/2000/01/rdf-schema#type> <http://project-iasis.eu/vocab/Batter> . 
+<http://iasis-project.eu/Batter/1001> <http://project-iasis.eu/vocab/batterType> "Regular"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://iasis-project.eu/Batter/1002> <http://www.w3.org/2000/01/rdf-schema#type> <http://project-iasis.eu/vocab/Batter> . 
+<http://iasis-project.eu/Batter/1002> <http://project-iasis.eu/vocab/batterType> "Chocolate"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://iasis-project.eu/Batter/1003> <http://www.w3.org/2000/01/rdf-schema#type> <http://project-iasis.eu/vocab/Batter> . 
+<http://iasis-project.eu/Batter/1003> <http://project-iasis.eu/vocab/batterType> "Blueberry"^^<http://www.w3.org/2001/XMLSchema#string> . 
+<http://iasis-project.eu/Batter/1004> <http://www.w3.org/2000/01/rdf-schema#type> <http://project-iasis.eu/vocab/Batter> . 
+<http://iasis-project.eu/Batter/1004> <http://project-iasis.eu/vocab/batterType> "Devil's Food"^^<http://www.w3.org/2001/XMLSchema#string> . 
